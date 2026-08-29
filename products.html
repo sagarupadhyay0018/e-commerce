@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>e-com</title>
+  <script type="module" crossorigin src="/assets/products-Cg9pwVIV.js"></script>
+  <script type="module" crossorigin src="/assets/main-B55f6KdB.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/products-B-IIWwqP.css">
+</head>
+
+<body>
+
+
+  <!-- ========== Start Navbar ========== -->
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+        <div class="sing_in_up">
+          <a href="#">SIGN IN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          shopNOW
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="addtocart.html" class="nav-link add-to-cart-button" id="cartValue">
+              <i class="fa-solid fa-cart-shopping"></i> 0
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ========== End Navbar ========== -->
+
+
+
+  <!-- ========== Start Home Product Section ========== -->
+  <section class="section-products">
+    <div class="container">
+      <h2 class="section-common--heading">Why Choose shpNOw Store</h2>
+      <p class="section-common--subheading">
+        Choose shpNOw EduHub for a holistic, enriching learning experience that
+        empowers you to achieve your goals.
+      </p>
+    </div>
+    <div class="container">
+      <div id="productContainer"></div>
+    </div>
+  </section>
+
+  <!-- Template for a product -->
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [ card ]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+
+        <h2 class="productName"></h2>
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="productDescription"></p>
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+        </div>
+
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </button>
+      </article>
+    </div>
+  </template>
+  <!-- ========== End Home Product Section ========== -->
+
+
+
+  <!-- ========== Start footer Section ========== -->
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content_1">
+        <img src="data:image/svg+xml,%3csvg%20width='300'%20height='300'%20viewBox='0%200%20300%20300'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='300'%20height='300'%20fill='%23FFE0E8'/%3e%3cg%20transform='translate(150,165)'%3e%3crect%20x='-70'%20y='-30'%20width='140'%20height='90'%20rx='8'%20fill='%23FF3F6C'/%3e%3crect%20x='-70'%20y='-55'%20width='140'%20height='30'%20rx='6'%20fill='%23E31C5F'/%3e%3crect%20x='-14'%20y='-55'%20width='28'%20height='115'%20fill='%23FFE0E8'/%3e%3cpath%20d='M-14%20-55%20q-30%20-40%20-50%20-10%20q-8%2012%208%2012%20h42%20z'%20fill='%23FFE0E8'/%3e%3cpath%20d='M14%20-55%20q30%20-40%2050%20-10%20q8%2012%20-8%2012%20h-42%20z'%20fill='%23FFE0E8'/%3e%3c/g%3e%3c/svg%3e" alt="logo" />
+        <p>
+          Welcome to shpNOw EcomStore, your ultimate destination for
+          cutting-edge gadgets!
+        </p>
+        <!-- <img src="./src/assets/promo-gift.svg" alt="cards" /> -->
+      </div>
+      <div class="content_2">
+        <h4>SHOPPING</h4>
+        <a href="#">Computer Store</a>
+        <a href="#">Laptop Store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales & Discount</a>
+      </div>
+      <div class="content_3">
+        <h4>Experience</h4>
+        <a href="./contact.html">Contact Us</a>
+        <a href="" target="_blank">Payment Method</a>
+        <a href="" target="_blank">Delivery</a>
+        <a href="" target="_blank">Return and Exchange</a>
+      </div>
+      <div class="content_4">
+        <h4>NEWSLETTER</h4>
+        <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+        <div class="f-mail">
+          <input type="email" placeholder="Your Email" />
+          <i class="bx bx-envelope"></i>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="f-design">
+      <div class="f-design-txt">
+        <p>Design and Code by shpNOw Technical</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End footer Section ========== -->
+</body>
+
+</html>
